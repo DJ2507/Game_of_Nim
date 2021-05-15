@@ -21,5 +21,5 @@ def If_Win(Game):
     #If 0 Pieces Are Left There Is A Winner
     if sum(Game) == 0: 
         return True
-    else : 
+    else: 
         return False
