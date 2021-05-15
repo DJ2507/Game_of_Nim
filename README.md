@@ -10,9 +10,9 @@ The Game of Nim consists of two players who each take turns removing or ‘nimmi
 
 ## How To Run
 ### From Directory
-To run the the game, Run GameRun.py, via python GameRun.py from the directory (python3 maybe python2 or python depending on your environment).
+To run the the game, Run GameRun.py, via python GameRun.py from the directory (python maybe python2 or python3 depending on your environment).
 ```console
-foo@bar:~$ python3 GameRun.py
+foo@bar:~$ python GameRun.py
 ```
 
 ### From VisualStudio 2019
