@@ -13,7 +13,7 @@ def Comp_Move(Game,Nim_Sum):
     GameBoard.Game_Display(Game)
 
     # If Player Move Ends with Nim-Sum != 0, Attempt To Make Nim-Sum = 0
-    if (Nim_Sum != 0) :
+    if (Nim_Sum != 0):
         for i in range(len(Game)):
             #Searches For Best Valid Move, If Found Take Move
             if (Game[i]^Nim_Sum < Game[i]):
@@ -24,7 +24,7 @@ def Comp_Move(Game,Nim_Sum):
                 return Game
             
     #If Player Move Ends with Nim-Sum = 0, Make Random Move (Hope Player Makes Error)
-    else :
+    else:
         Random_Heap = random.randint(0,len(Game)-1)
         Game[Random_Heap] -= random.randint(1,Game[Random_Heap])
 
