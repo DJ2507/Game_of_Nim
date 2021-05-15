@@ -16,4 +16,4 @@ foo@bar:~$ python GameRun.py
 ```
 
 ### From VisualStudio 2019
-To run the game simply download the files and import them into a Visual Studio 2019 python project and click the green run button in at the top.
+To run the game simply download the files and import them into a Visual Studio 2019 python project and click the green 'run' button at the top.
