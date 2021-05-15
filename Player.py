@@ -12,7 +12,7 @@ def Player_Move(Game):
         Pieces_Chosen = input("Choose Number of Pieces To Remove: ")
         
         #Check If Input Is Invalid (E.G. Not Integer)
-        try :
+        try:
             Heap_Chosen = int(Heap_Chosen)
             Pieces_Chosen = int(Pieces_Chosen)
         except ValueError:
@@ -24,7 +24,7 @@ def Player_Move(Game):
         if (Heap_Chosen < 0) or (Heap_Chosen > (len(Game) - 1)) or (Pieces_Chosen < 1) or (Pieces_Chosen > Game[Heap_Chosen]):
             print("Invalid Input, Try Again")
             Check_Val2 = False
-        else :
+        else:
             Game[Heap_Chosen] = Game[Heap_Chosen] - Pieces_Chosen
             Check_Val2 = True
 
