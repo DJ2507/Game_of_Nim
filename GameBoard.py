@@ -1,6 +1,6 @@
 import random
 
-def Game_Generate():
+def Generate_Game():
     Game = []
     
     #Generate Random Number of Heaps Between *2 & 5)
@@ -15,11 +15,11 @@ def Game_Generate():
 #DISPLAY GAMEBOARD
 def Game_Display(Game):
     for i in range(len(Game)):
-        print("Heap",i,":",Game[i])
+        print("Heap", i, ":", Game[i])
 
 def If_Win(Game):
     #If 0 Pieces Are Left There Is A Winner
     if sum(Game) == 0: 
         return True
-    else: 
+    else : 
         return False
