@@ -4,11 +4,11 @@ import Player
 import Computer
 
 #GAMEPLAY DESIGN
-Game_Continue = True
-Game = GameBoard.Game_Generate()
+Continue_Game = True
+Game = GameBoard.Generate_Game()
 
 #Loop Till  Winner Is Found
-while (Game_Continue == True):
+while (Continue_Game == True):
     #Player Move
     Player.Player_Move(Game)
 
@@ -18,9 +18,9 @@ while (Game_Continue == True):
         break
     
     #Computer Move
-    Computer.Comp_Move(Game,Computer.Nimsum_Cal(Game))
+    Computer.Computer_Move(Game, Computer.NimSum_Cal(Game))
 
     #Constant Check For Winning Condition
     if (GameBoard.If_Win(Game) == True):
-        print("Computer Win!")
+        print("Computer Wins!")
         break
